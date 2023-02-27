@@ -30,4 +30,4 @@ function getRandomInt(max) {
     }
   }
     export default isnumberEven;  
-    
+  
