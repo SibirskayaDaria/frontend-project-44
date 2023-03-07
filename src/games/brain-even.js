@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import generateRandomInt from '../src/utils.js';
-import playGame from '../src/index.js';
+import generateRandomInt from '../utils.js';
+import playGame from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
