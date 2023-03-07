@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import generateRandomInt from '../utils.js';
-import playGame from '../index.js';
+import generateRandomInt from '../src/utils.js';
+import playGame from '../src/index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 const progressionLength = 10;
