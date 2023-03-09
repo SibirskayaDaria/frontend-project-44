@@ -6,9 +6,9 @@ import playGame from '../index.js';
 const gameDescription = 'What is the result of the expression?';
 
 const generateExpression = () => {
-  const expressions = ['+', '-', '*'];
+  const operators = ['+', '-', '*'];
   const generatedExpressionIndex = generateRandomInt(0, 3);
-  return expressions[generatedExpressionIndex];
+  return operators[generatedExpressionIndex];
 };
 
 const getResultOfExpression = (integer1, integer2, expression) => {
@@ -30,17 +30,17 @@ const getResultOfExpression = (integer1, integer2, expression) => {
 
   return result;
 };
-const startBrainCalcCore = () => {
+const generateRound  = () => {
   const randomInt1 = generateRandomInt(1, 11);
   const randomInt2 = generateRandomInt(1, 11);
   const randomExpression = generateExpression();
-  const question = `Question: ${randomInt1} ${randomExpression} ${randomInt2}\nYour answer: `;
+  const question = `${randomInt1} ${randomExpression} ${randomInt2}`;
 
   const correctAnswer = String(getResultOfExpression(randomInt1, randomInt2, randomExpression));
   return [question, correctAnswer];
 };
 
 const start = () => {
-  playGame(startBrainCalcCore, gameDescription);
+  playGame(generateRound, gameDescription);
 };
 export default start;

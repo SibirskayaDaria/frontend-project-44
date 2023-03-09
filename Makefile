@@ -22,5 +22,5 @@ brain-progression:
 brain-prime:
 	node bin/brain-prime.js
 
-make lint:
+lint:
 	npx eslint 

@@ -9,7 +9,7 @@ const isEven = (number) => number % 2 === 0;
 
 const startBrainEvenCore = () => {
   const randomInt = generateRandomInt(1, 101);
-  const question = `Question: ${randomInt}\nYour answer: `;
+  const question = `${randomInt}`;
 
   const correctAnswer = isEven(randomInt) ? 'yes' : 'no';
 
