@@ -15,7 +15,7 @@ const getAritmeticProgression = () => {
     progressionNumber += step;
   }
   return progression;
-}
+};
 
 const startBrainCalcCore = () => {
   const progression = getAritmeticProgression();
