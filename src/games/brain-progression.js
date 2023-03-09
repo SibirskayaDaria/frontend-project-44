@@ -23,7 +23,8 @@ const startBrainCalcCore = () => {
 
   const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = '..';
-  const question = progression;
+  const questionOutput = progression.join(' ');
+  const question = `${questionOutput}`;
 
   return [question, correctAnswer];
 };
