@@ -20,9 +20,9 @@ const playGame = (generateRound, gameDescription) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       return;
-    };
-  };
-  return console.log(`Congratulations, ${userName}!`);
+    }
+  }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default playGame;
