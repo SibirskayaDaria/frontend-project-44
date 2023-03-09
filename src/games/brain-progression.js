@@ -7,10 +7,10 @@ const gameDescription = 'What number is missing in the progression?';
 
 const getAritmeticProgression = () => {
   let progressionNumber = generateRandomInt(0, 50);
-  const step = generateRandomInt(2,5);
+  const step = generateRandomInt(2, 5);
   const progression = [];
 
-  for (let i = 0;i < progressionLength; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     progression.push(progressionNumber);
     progressionNumber += step;
   }

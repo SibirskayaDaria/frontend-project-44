@@ -30,7 +30,7 @@ const getResultOfExpression = (integer1, integer2, expression) => {
 
   return result;
 };
-const generateRound  = () => {
+const generateRound = () => {
   const randomInt1 = generateRandomInt(1, 11);
   const randomInt2 = generateRandomInt(1, 11);
   const randomExpression = generateExpression();
