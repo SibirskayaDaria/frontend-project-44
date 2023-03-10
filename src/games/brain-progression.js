@@ -1,13 +1,11 @@
-#!/usr/bin/env node
 import generateRandomInt from '../utils.js';
 import playGame from '../index.js';
 
 const progressionLength = 10;
 const gameDescription = 'What number is missing in the progression?';
 
-const getAritmeticProgression = () => {
+const getAritmeticProgression = (firstNumber, step) => {
   let progressionNumber = generateRandomInt(0, 50);
-  const step = generateRandomInt(2, 5);
   const progression = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
@@ -18,7 +16,9 @@ const getAritmeticProgression = () => {
 };
 
 const startBrainCalcCore = () => {
-  const progression = getAritmeticProgression();
+  const firstNumber = generateRandomInt(0, 50);
+  const step = generateRandomInt(1, 5);
+  const progression = getAritmeticProgression(firstNumber, step);
   const randomIndex = generateRandomInt(0, progressionLength);
 
   const correctAnswer = String(progression[randomIndex]);

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import generateRandomInt from '../utils.js';
 import playGame from '../index.js';
 
