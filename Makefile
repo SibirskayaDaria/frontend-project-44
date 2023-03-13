@@ -23,4 +23,4 @@ brain-prime:
 	node bin/brain-prime.js
 
 lint:
-	npx eslint 
+	npx eslint .
