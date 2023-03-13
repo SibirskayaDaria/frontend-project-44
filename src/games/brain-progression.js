@@ -4,7 +4,7 @@ import playGame from '../index.js';
 const progressionLength = 10;
 const gameDescription = 'What number is missing in the progression?';
 
-const getAritmeticProgresion = (firstNumber, step) => {
+const getAritmeticProgression = (firstNumber, step) => {
   let progressionNumber = generateRandomInt(0, 50);
   const progression = [];
 
