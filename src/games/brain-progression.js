@@ -4,7 +4,7 @@ import playGame from '../index.js';
 const progressionLength = 10;
 const gameDescription = 'What number is missing in the progression?';
 
-const getGcd = (firstNumber, step) => {
+const getArithmeticProgression = (firstNumber, step) => {
   let progressionNumber = generateRandomInt(0, 50);
   const progression = [];
 
@@ -18,8 +18,8 @@ const getGcd = (firstNumber, step) => {
 const startBrainCalcCore = () => {
   const firstNumber = generateRandomInt(0, 50);
   const step = generateRandomInt(1, 5);
-  const progression = getGcd(firstNumber, step);
-  const randomIndex = generateRandomInt(0, progressionLength);
+  const progression = g(firstNumber, step);
+  const randomIndex = getArithmeticProgression(0, progressionLength);
 
   const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = '..';
