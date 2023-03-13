@@ -8,14 +8,14 @@ const getGcd = (randomInt1, randomInt2) => {
     return randomInt1 + randomInt2;
   }
   if (randomInt1 > randomInt2) {
-    return getCorrectAnswer(randomInt1 - randomInt2, randomInt2);
+    return getGcd(randomInt1 - randomInt2, randomInt2);
   }
-  return getCorrectAnswer(randomInt1, randomInt2 - randomInt1);
+  return getGcd(randomInt1, randomInt2 - randomInt1);
 };
 const startBrainGcdCore = () => {
   const randomInt1 = generateRandomInt(1, 100);
   const randomInt2 = generateRandomInt(1, 100);
-  
+
   const question = `${randomInt1} ${randomInt2}`;
   const correctAnswer = String(getGcd(randomInt1, randomInt2));
 
